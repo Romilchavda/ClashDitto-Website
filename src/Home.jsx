@@ -5,23 +5,27 @@ import { MessageSquare, Zap, Shield, PlusCircle, ChevronRight, Users, BarChart3,
 const Home = () => {
   const inviteLink = "https://discord.com/api/oauth2/authorize?client_id=1286591275071574096&permissions=8&scope=bot%20applications.commands";
   const [activeTab, setActiveTab] = useState('player');
-
+  
   const commands = {
     player: { cmd: "/player", desc: "Generate beautiful visual profile cards with real-time stats.", icon: <Users size={20}/> },
     clan: { cmd: "/clan", desc: "Check clan war performance and member management logs.", icon: <Shield size={20}/> },
     about: { cmd: "/about", desc: "View real-time bot statistics and development information.", icon: <BarChart3 size={20}/> }
   };
-
+  
   return (
     <div className="min-h-screen bg-[#020617] text-slate-200 font-sans selection:bg-[#EE6A70]">
       {/* Navbar */}
       <nav className="flex justify-between items-center px-6 py-4 md:px-20 bg-[#020617]/40 backdrop-blur-xl sticky top-0 z-50 border-b border-white/5">
         <Link to="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-[#EE6A70] rounded-xl flex items-center justify-center font-black text-white shadow-lg">C</div>
+          <img 
+  src="/SiteLogo.png" 
+  alt="ClashDitto Logo" 
+  className="w-10 h-10 rounded-xl shadow-lg border border-white/10 object-cover"
+/>
           <h1 className="text-xl font-black text-white tracking-tighter uppercase">ClashDitto</h1>
         </Link>
         <div className="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-slate-400">
-            <Link to="/tos" className="hover:text-[#EE6A70]">Terms</Link>
+            <Link to="/terms" className="hover:text-[#EE6A70]">Terms</Link>
             <Link to="/privacy" className="hover:text-[#EE6A70]">Privacy</Link>
         </div>
         <a href={inviteLink} className="bg-[#EE6A70] px-6 py-2 rounded-full font-bold text-sm text-white">Invite</a>
@@ -58,7 +62,7 @@ const Home = () => {
       {/* Footer */}
       <footer className="py-20 border-t border-white/5 text-center">
         <div className="flex justify-center gap-8 mb-6 text-sm font-bold text-slate-500">
-          <Link to="/tos" className="hover:text-[#EE6A70]">Terms of Service</Link>
+          <Link to="/terms" className="hover:text-[#EE6A70]">Terms of Service</Link>
           <Link to="/privacy" className="hover:text-[#EE6A70]">Privacy Policy</Link>
         </div>
         <p className="text-[10px] text-slate-700 tracking-[0.3em] uppercase">© 2026 Developed by romil_chavda</p>
