@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MessageSquare, Zap, Shield, PlusCircle, ChevronRight, Users, BarChart3, Sword, CheckCircle2 } from 'lucide-react';
+import logo from './assets/SiteLogo.png';
 
 const Home = () => {
   const inviteLink = "https://discord.com/api/oauth2/authorize?client_id=1286591275071574096&permissions=8&scope=bot%20applications.commands";
@@ -18,7 +19,7 @@ const Home = () => {
       <nav className="flex justify-between items-center px-6 py-4 md:px-20 bg-[#020617]/40 backdrop-blur-xl sticky top-0 z-50 border-b border-white/5">
         <Link to="/" className="flex items-center gap-3">
           <img 
-  src="/src/assets/SiteLogo.png" 
+  src={logo}
   alt="ClashDitto Logo" 
   className="w-10 h-10 rounded-xl shadow-lg border border-white/10 object-cover"
 />
