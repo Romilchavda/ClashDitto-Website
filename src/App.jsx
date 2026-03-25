@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
-import ToS from './Terms';
+import Terms from './Terms';
 import Privacy from './Privacy';
 
 function App() {
