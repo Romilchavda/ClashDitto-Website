@@ -18,7 +18,7 @@ const Home = () => {
       <nav className="flex justify-between items-center px-6 py-4 md:px-20 bg-[#020617]/40 backdrop-blur-xl sticky top-0 z-50 border-b border-white/5">
         <Link to="/" className="flex items-center gap-3">
           <img 
-  src="/SiteLogo.png" 
+  src="/src/assets/SiteLogo.png" 
   alt="ClashDitto Logo" 
   className="w-10 h-10 rounded-xl shadow-lg border border-white/10 object-cover"
 />
