@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, CheckCircle2, AlertTriangle, ShieldAlert } from 'lucide-react';
 
-const ToS = () => {
+const Terms = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   return (
@@ -49,4 +49,4 @@ const ToS = () => {
   );
 };
 
-export default ToS;
+export default Terms;
